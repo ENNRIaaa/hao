@@ -8,6 +8,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>时光瓶-网站收藏</title>
+    <meta http-equiv="keywords" content="时光瓶,网站导航,网址导航">
+    <meta name="description" content="时光瓶-网站收藏，网址导航页面" />
     <meta name="author" content="Li Yan" />
     <meta name="description" content="这是一个非常简陋的静态网址收藏页面" />
     <link rel="shortcut icon " type="images/x-icon" href="/favicon.ico">
@@ -16,6 +18,7 @@
     <script src="main.js"></script>
     <script src="jquery.min.js"></script>
     <link href="bootstrap/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
     <script src="bootstrap/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 
@@ -41,34 +44,38 @@
     </div>
 
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <!--Panel 1-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
                         aria-expanded="true" aria-controls="collapseOne">
-                        ·常用网站
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"> 最常用</i>
                     </a>
                 </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                     <a class="btn btn-default btn-lg" href="https://www.shiguangping.com/" target="_blank">时光瓶</a>
-                    <a class="btn btn-default btn-lg" href="https://www.google.co.jp/" target="_blank">Google日本</a>
-                    <a class="btn btn-default btn-lg" href="https://www.baidu.com/" target="_blank">百度搜索</a>
-                    <a class="btn btn-default btn-lg" href="https://zh.wikipedia.org/wiki/Wiki"
-                        target="_blank">wiki百科</a>
+                    <a class="btn btn-default btn-lg" href="https://www.google.co.jp/" target="_blank">Google JP</a>
+                    <a class="btn btn-default btn-lg" href="https://www.baidu.com/" target="_blank">Baidu</a>
+                    <a class="btn btn-default btn-lg" href="https://zh.wikipedia.org/wiki/Wiki" target="_blank">Wiki CN
+                    </a>
                     <a class="btn btn-default btn-lg" href="https://www.instagram.com/?hl=zh-tw"
                         target="_blank">Instagram</a>
-                    <a class="btn btn-default btn-lg" href="https://www.zhihu.com/" target="_blank">知乎</a>
+                    <a class="btn btn-default btn-lg" href="https://www.zhihu.com/" target="_blank">Zhihu</a>
+                    <a class="btn btn-default btn-lg" href="https://aionbbs.life/" target="_blank">Aion BBS</a>
+                    <a class="btn btn-default btn-lg" href="http://www.huahongtele.com:81/" target="_blank">华鸿电信OA</a>
                 </div>
             </div>
         </div>
+        <!--Panel 2-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        ·购物
+                        <i class="fa fa-amazon" aria-hidden="true"> 买买买</i>
                     </a>
                 </h4>
             </div>
@@ -81,14 +88,14 @@
                     <a class="btn btn-default btn-lg" href="https://buyee.jp/" target="_blank">buyee日本代购</a>
                 </div>
             </div>
-
         </div>
+        <!--Panel 3-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingThree">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        ·视频网站
+                        <i class="fa fa-youtube-play" aria-hidden="true"> 追番追剧</i>
                     </a>
                 </h4>
             </div>
@@ -107,12 +114,31 @@
                 </div>
             </div>
         </div>
+        <!--Panel 12-->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading12">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                        <i class="fa fa-envelope-o" aria-hidden="true"> 邮箱入口</i>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                <div class="panel-body">
+                    <a class="btn btn-default btn-lg" href="https://mail.qq.com/" target="_blank">QQ邮箱</a>
+                    <a class="btn btn-default btn-lg" href="https://mail.163.com/" target="_blank">163邮箱</a>
+                    <a class="btn btn-default btn-lg" href="https://mail.yahoo.co.jp" target="_blank">Yahoo JP</a>
+                </div>
+            </div>
+        </div>
+        <!--Panel 10-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingTen">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        ·媒体资讯
+                        <i class="fa fa-newspaper-o" aria-hidden="true"> 新闻资讯</i>
                     </a>
                 </h4>
             </div>
@@ -124,12 +150,13 @@
                 </div>
             </div>
         </div>
+        <!--Panel 4-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingFour">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        ·大连公共服务
+                        <i class="fa fa-handshake-o" aria-hidden="true"> 大连公共服务</i>
                     </a>
                 </h4>
             </div>
@@ -144,42 +171,49 @@
                 </div>
             </div>
         </div>
+        <!--Panel 5-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingFive">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        ·学习及考试
+                        <i class="fa fa-book" aria-hidden="true"> 学习及考试</i>
                     </a>
                 </h4>
             </div>
             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                 <div class="panel-body">
                     <a class="btn btn-default btn-lg" href="https://www.imooc.com/" target="_blank">慕课网</a>
-                    <a class="btn btn-default btn-lg" href="http://how2j.cn/" target="_blank">how2j</a>
                     <a class="btn btn-default btn-lg" href="https://www.hujiang.com/" target="_blank">沪江网校</a>
+                    <a class="btn btn-default btn-lg" href="http://how2j.cn/" target="_blank">how2j</a>
+                    <a class="btn btn-default btn-lg" href="http://www.runoob.com/" target="_blank">RUNOOB</a>
+                    <a class="btn btn-default btn-lg" href="https://www.hjdict.com" target="_blank">沪江小D</a>
+                    <a class="btn btn-default btn-lg" href="https://www.mojidict.com/" target="_blank">MOJi辞書</a>
+                    <a class="btn btn-default btn-lg" href="https://segmentfault.com/" target="_blank">segmentfault</a>
+                    <a class="btn btn-default btn-lg" href="http://man.linuxde.net/" target="_blank">Linux命令大全</a>
                     <a class="btn btn-default btn-lg" href="https://jlpt.etest.edu.cn/index.do"
                         target="_blank">教育部考试中心-日语能力测试网上报名系统</a>
                     <a class="btn btn-default btn-lg" href="http://www.lnzsks.com" target="_blank">辽宁招生考试之窗</a>
                     <a class="btn btn-default btn-lg" href="http://zk.lnzsks.com/lnzk.wb?100068"
                         target="_blank">辽宁省高等教育自学考试网上服务平台</a>
-                    <a class="btn btn-default btn-lg" href="https://www.hjdict.com" target="_blank">沪江小D</a>
-                    <a class="btn btn-default btn-lg" href="http://www.runoob.com/" target="_blank">RUNOOB</a>
                     <a class="btn btn-default btn-lg"
                         href="https://wsr.pearsonvue.com/testtaker/signin/SignInPage.htm?clientCode=ORACLE"
                         target="_blank">Pearson
                         VUE - Oracle 认证项目</a>
-                    <a class="btn btn-default btn-lg" href="https://segmentfault.com/" target="_blank">segmentfault</a>
-                    <a class="btn btn-default btn-lg" href="http://man.linuxde.net/" target="_blank">Linux命令大全</a>
+                    <a class="btn btn-default btn-lg" href="https://www.chsi.com.cn/" target="_blank">学信网</a>
+                    <a class="btn btn-default btn-lg" href="https://docs.python.org/zh-cn/3/" target="_blank">Python
+                        3.8.1rc1 文档</a>
+                        <a class="btn btn-default btn-lg" href="https://www.cnswift.org/basic-operators" target="_blank">Swift 编程语言</a>
                 </div>
             </div>
         </div>
+        <!--Panel 6-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingSix">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        ·云服务商
+                        <i class="fa fa-cloud" aria-hidden="true"> 云服务商</i>
                     </a>
                 </h4>
             </div>
@@ -195,12 +229,13 @@
                 </div>
             </div>
         </div>
+        <!--Panel 7-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingSeven">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        ·程序员们
+                        <i class="fa fa-keyboard-o" aria-hidden="true"> 程序员们</i>
                     </a>
                 </h4>
             </div>
@@ -212,12 +247,13 @@
                 </div>
             </div>
         </div>
+        <!--Panel 8-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingEight">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        ·开源项目及开源博客框架
+                        <i class="fa fa-github" aria-hidden="true"> 开源项目及开源博客框架</i>
                     </a>
                 </h4>
             </div>
@@ -230,12 +266,13 @@
                 </div>
             </div>
         </div>
+        <!--Panel 9-->
         <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingNine">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                         href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        ·开发环境及IDE下载
+                        <i class="fa fa-linux" aria-hidden="true"> 开发环境及IDE下载</i>
                     </a>
                 </h4>
             </div>
@@ -252,15 +289,55 @@
                     <a class="btn btn-default btn-lg" href="https://www.sublimetext.com/" target="_blank">sublime
                         3下载</a>
                     <a class="btn btn-default btn-lg" href="https://atom.io/" target="_blank">Atom下载</a>
-
                 </div>
             </div>
-        </div><br><br>
+        </div>
+        <!--Panel 11-->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading11">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                        <i class="fa fa-edge" aria-hidden="true"> 浏览器下载</i>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                <div class="panel-body">
+                    <a class="btn btn-default btn-lg"
+                        href="https://www.microsoftedgeinsider.com/zh-cn/download?form=MI13E8&OCID=MI13E8"
+                        target="_blank">Edge Insider</a>
+                    <a class="btn btn-default btn-lg" href="https://www.google.cn/chrome/" target="_blank">Chrome</a>
+                    <a class="btn btn-default btn-lg" href="http://www.firefox.com.cn/" target="_blank">Firefox</a>
+                </div>
+            </div>
+        </div>
+        <!--Panel 13-->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading13">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                        <i class="fa fa-html5" aria-hidden="true"> 前端设计</i>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                <div class="panel-body">
+                    <a class="btn btn-default btn-lg" href="http://www.fontawesome.com.cn/" target="_blank">Font Awesome
+                        中文网</a>
+                </div>
+            </div>
+        </div>
+
+        <!--华丽分割线-->
+        <br><br>
     </div>
     <div style="text-align:center">
         <p> © Liyan's 时光瓶 2019 <a href="http://www.miibeian.gov.cn/" target="_blank">辽ICP备16006134号-3</a></p>
     </div>
 </body>
-<!--更新日期：2019年8月2日-->
+<!--更新日期 2019年8月2日-->
+<!--更新日期 2019年12月16日：1.每个面板新增了Font Awesome图标 2.加入了新分类和网址-->
 
 </html>
